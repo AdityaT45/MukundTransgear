@@ -1,0 +1,410 @@
+/* section 1 container of gear */
+
+.mukund-sec-1-container-1 {
+  width: 98%;
+  border-radius: 10px;
+  border: 0.3px solid #39615f;
+  padding: 20px;
+  box-shadow: 0px 0px 30px 15px #39615F26;
+}
+
+.mukund-sec-1-container-1-header {
+  font-family: "Judson", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.mukund-sec-1-main-product-image{
+  max-width: 550px; 
+  width: 95%;
+  height: auto;
+  display: inline-block;
+}
+
+/* Product Cards */
+.mukund-sec-1-products-card {
+  flex: 1 1 200px;
+  max-width: 220px;
+  min-width: 150px;
+  height: 150px;
+
+  border-radius: 8px;
+  border: 1px solid #39615f;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Input and Button */
+.mukund-sec-1-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #39615f;
+}
+
+.mukund-sec-1-input::placeholder {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.mukund-sec-1-button {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #39615f;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+}
+
+/* Font Styling */
+.mukund-sec-1-bold-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.mukund-sec-1-normal-font {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+/* Buttons */
+.mukund-sec-1-call-button,
+.mukund-sec-1-mail-button {
+  width: 100%;
+  max-width: 198px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mukund-sec-1-call-button {
+  border: 1px solid #39615F;
+  background-color: white;
+  color: #39615F;
+}
+
+.mukund-sec-1-mail-button {
+  background: #39615F;
+  color: white;
+  border: none;
+}
+
+/* Icons */
+.mukund-sec-1-icon {
+  font-size: 24px;
+  color: #39615F;
+}
+.mukund-sec-1-products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 991px) {
+  .mukund-sec-1-bold-font {
+    font-size: 20px;
+  }
+
+  .mukund-sec-1-normal-font {
+    font-size: 16px;
+  }
+
+  .mukund-sec-1-container-1-header {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mukund-sec-1-products-card {
+    max-width: 150px;
+    padding: 15px;
+  }
+
+  .mukund-sec-1-call-button,
+  .mukund-sec-1-mail-button {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .mukund-sec-1-button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mukund-sec-1-container-1-header {
+    font-size: 1.8rem;
+  }
+
+  .mukund-sec-1-bold-font {
+    font-size: 18px;
+  }
+
+  .mukund-sec-1-normal-font {
+    font-size: 14px;
+  }
+
+  .mukund-sec-1-products-card {
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: auto;
+  }
+
+  .mukund-sec-1-input {
+    height: 42px;
+  }
+
+  .mukund-sec-1-button {
+    height: 42px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+/* section 2 container of Product Overview */
+
+.mukund-sec-2-container-2{
+  width: 98%;
+  
+
+}
+.mukund-sec-2-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.mukund-sec-2-secondary-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+}
+
+.mukund-sec-2-msg-text{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4; /* Adds spacing between lines */
+  letter-spacing: 0%;
+  vertical-align: bottom;
+}
+
+
+/* section 3 container of requriment form */
+
+.mukund-sec-3-container {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #39615F;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  position: relative; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+.mukund-sec-3-header {
+  font-family: 'Judson', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white; /* Optional: Add based on background */
+  text-align: center; /* Optional: Center the heading */
+}
+
+.mukund-sec-3-form-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color :white;
+  margin-left: 30px;
+}
+
+
+
+
+/* .label2{
+  margin-left: 0px;
+} */
+
+.mukund-sec-3-form-input{
+  width: 100%;
+  height: 49px;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 15px 12px;
+  gap: 8px; /* Note: 'gap' doesn't apply to input but won't hurt */
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent; /* optional depending on your design */
+}
+.mukund-sec-3-form-input::placeholder {
+  color: #ffffff;
+  opacity: 1; /* Make sure it's fully visible */
+}
+
+
+.mukund-sec-3-form-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mukund-sec-3-form-checkbox:checked {
+  background-color: transparent; /* no blue */
+  border: 2px solid white;
+}
+
+.mukund-sec-3-form-checkbox:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: -1px;
+  left: 2px;
+}
+
+.mukund-sec-3-form-checkbox:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.mukund-sec-3-form-textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 15px 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  resize: none;
+}
+
+
+.mukund-sec-3-form-textarea::placeholder {
+  color: #ffffff !important;  /* force white */
+  opacity: 1;                 /* ensures it's visible */
+}
+
+
+.mukund-sec-3-button{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    background-color:  white;
+    color:#39615f;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+  
+}
+
+@media (max-width: 576px) {
+  .custom-margin {
+    margin-left: 30px;
+  }
+}
+
+/* section 4 container of explore more product*/
+
+.mukund-sec-4-container {
+  width: 90%;
+  padding: 20px;
+}
+
+.mukund-sec-4-container-card {
+  width: 280px;
+  height: auto;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 
+    inset 0px 4px 4px 0px #39615F40, 
+    0px 4px 4px 0px #39615F40;
+  
+}
+
+
+.mukund-sec-4-container-img{
+  margin-top: -25px;
+  margin-left: -5px;
+  margin-bottom: -15px;
+ }
+
+ .mukund-sec-4-container-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: bottom; /* Note: Only applies to inline/inline-block elements */
+}
+
+.mukund-sec-4-container-card-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  display: block; /* Ensures text-align applies correctly */
+}
+
+.mukund-sec-4-container-card-btn {
+  width: 152px;
+  height: 40px;
+  border-radius: 6px;
+  background: #DE704D;
+  color: #fff; /* Ensures the text is visible on the orange background */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: bottom; /* Only applies to inline/inline-block elements */
+  border: none; /* Optional: removes default border */
+  padding: 5px 10px; /* Optional: adjusts spacing inside button */
+  cursor: pointer; /* Makes it feel like a clickable button */
+}
