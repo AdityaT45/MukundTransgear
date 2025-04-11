@@ -186,11 +186,16 @@
 
 /* section 2 container of Product Overview */
 
-.mukund-sec-2-container-2{
-  width: 98%;
-  
-
+.mukund-sec-2-container-2 {
+  width: 95%; /* Default width */
 }
+
+@media (max-width: 576px) { /* For small screens (sm) */
+  .mukund-sec-2-container-2 {
+    width: 90%; /* 90% width for small screens */
+  }
+}
+
 .mukund-sec-2-heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;

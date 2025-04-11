@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <button class="btn btn-warning text-white m-5 product-btn" data-product=" Industrial Sprockets"> Industrial Sprockets</button>
+  <button class="btn btn-warning text-white m-5 product-btn" data-product="Planetary Gearbox"> Planetary Gearbox</button>
+  <button class="btn btn-warning text-white m-5 product-btn" data-product="Harmonic Drives">Harmonic Drives</button>
+  <button class="btn btn-warning text-white m-5 product-btn" data-product="Worm Gearbox">Worm Gearbox</button>
+  <button class="btn btn-danger text-white m-5 product-btn" ><a href="dummy.html">dummy page</a> </button>
+
+  <script>
+    document.querySelectorAll('.product-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const product = button.getAttribute('data-product');
+        localStorage.setItem('selectedProduct', product);
+        window.location.href = 'product.html';
+      });
+    });
+  </script>
+</body>
+</html>
