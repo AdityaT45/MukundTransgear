@@ -1,5 +1,9 @@
 /* section 1 container of gear */
 
+.g-3, .gx-3 {
+  --bs-gutter-x: 5rem;
+}
+
 .mukund-sec-1-container-1 {
   width: 98%;
   border-radius: 10px;
@@ -14,19 +18,30 @@
   font-size: 2.5rem;
   text-align: center;
 }
-.mukund-sec-1-main-product-image{
-  max-width: 550px; 
-  width: 95%;
+.mukund-sec-1-main-product-image {
+  width: 60%;
   height: auto;
   display: inline-block;
 }
 
+/* For screens smaller than or equal to 768px (sm and md sizes) */
+@media (max-width: 768px) {
+  .mukund-sec-1-main-product-image {
+    width: 100%;
+  }
+}
+
+/* .mukund-sec-1-img-div{
+  width: 100%;
+} */
+
 /* Product Cards */
 .mukund-sec-1-products-card {
   flex: 1 1 200px;
-  max-width: 220px;
-  min-width: 150px;
-  height: 150px;
+  /* max-width: 220px;
+  min-width: 150px; */
+  /* height: 150px; */
+  width: 100%;
 
   border-radius: 8px;
   border: 1px solid #39615f;
@@ -137,7 +152,7 @@
 
 @media (max-width: 767px) {
   .mukund-sec-1-products-card {
-    max-width: 150px;
+    max-width: 100%;
     padding: 15px;
   }
 
@@ -182,6 +197,73 @@
 }
 
 
+.zoom-box {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
+
+
+
+#toast {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  z-index: 9999;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+#toast.show {
+  display: block;
+  opacity: 1;
+}
+#toast.hide {
+  opacity: 0;
+}
+
+
+
+/* loader */
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #007bff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 
 /* section 2 container of Product Overview */
@@ -252,16 +334,25 @@
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0;
-  color :white;
-  margin-left: 30px;
+  color: white;
+  margin-left: 20px; /* default for larger screens */
+}
+
+/* For small screens */
+@media (max-width: 576px) {
+  .mukund-sec-3-form-label {
+      margin-left: 10px;
+  }
 }
 
 
 
 
-/* .label2{
-  margin-left: 0px;
-} */
+
+.label2{
+  margin-left: 30px;
+  margin-top: 10px;
+}
 
 .mukund-sec-3-form-input{
   width: 100%;
@@ -300,7 +391,7 @@
 }
 
 .mukund-sec-3-form-checkbox:checked::after {
-  content: "✔";
+
   color: white;
   font-size: 14px;
   position: absolute;
@@ -314,7 +405,7 @@
 }
 
 .mukund-sec-3-form-textarea {
-  width: 100%;
+  width: 1100px;
   border-radius: 8px;
   border: 1px solid white;
   padding: 15px 12px;
@@ -324,6 +415,55 @@
   background-color: transparent;
   resize: none;
 }
+
+
+@media (max-width: 1024px) {
+  .mukund-sec-3-form-textarea {
+    width: 97%;
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mukund-sec-3-form-textarea{
+    /* width: 97%; */
+    margin-left: 120px;
+  }
+}
+
+
+@media (max-width: 424px) {
+  .mukund-sec-3-form-textarea{
+    /* width: 97%; */
+    margin-left: 130px;
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .custom-margin-2 {
+    /* width: 97%; */
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-margin-2 {
+    /* width: 97%; */
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 424px) {
+  .custom-margin-2{
+    /* width: 97%; */
+    margin-left: 13px;
+
+  }
+}
+
+
+
 
 
 .mukund-sec-3-form-textarea::placeholder {
@@ -345,12 +485,24 @@
   
 }
 
+
+.custom-margin{
+  margin-left: -43px;
+}
+
+
 @media (max-width: 576px) {
   .custom-margin {
-    margin-left: 30px;
+    margin-left: 10px;
   }
 }
 
+@media (max-width: 1023px) {
+  .custom-margin {
+    margin-left: -120px;
+  }
+
+}
 /* section 4 container of explore more product*/
 
 .mukund-sec-4-container {
@@ -359,7 +511,7 @@
 }
 
 .mukund-sec-4-container-card {
-  width: 280px;
+  /* width: 280px; */
   height: auto;
   border-radius: 15px;
   background: #ffffff;
