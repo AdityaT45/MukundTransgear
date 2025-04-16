@@ -281,16 +281,16 @@
 .mukund-sec-2-heading {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 100%;
   letter-spacing: 0%;
 }
 
 .mukund-sec-2-secondary-text {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;  
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.4;
+  font-size: 1.3rem;
+  line-height: 1.5;
   letter-spacing: 0%;
   vertical-align: bottom;
 }
